@@ -1,38 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0c10;
+  color: #fff;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: linear-gradient(to bottom, #1c2331, #0a0c10);
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3fc1c9; /* Teal color */
+  position: relative;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+border-radius: 21px;
+}
+
+.publish-label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-size: 23px;
+  margin: 15px;
+}
+
+.file-input {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+  
+}
+
+.file-input + label {
+  background: linear-gradient(to bottom, #3fc1c9, #364f6b); /* Gradient background */
+  color: #fff;
+  padding: 40px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+  
+ 
+  padding-bottom: 60px;
+}
+
+.file-input:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.file-input + label:hover {
+  background: linear-gradient(to bottom, #364f6b, #3fc1c9); /* Gradient background on hover */
+}
+
+.file-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.file-info {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 96%;
+  height: 5em;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.file-info p {
+  margin: 10px 0;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.file-info strong {
+  font-weight: bold;
+}
+
+.link> p>a{
+  text-decoration: none;
+  color: #3fc1c9;
 }

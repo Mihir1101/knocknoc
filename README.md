@@ -1,3 +1,35 @@
+# KnocKnoc: Decentralized Media Sharing Platform
+
+Welcome to KnockNoc, a decentralized platform that connects people with similar interests and enables them to share and access audio and video files in a fully decentralized manner. KnockNoc is built on IPFS, integrated with the Lighthouse SDK, and features a decentralized frontend powered by Near BOS (Blockchain Operating System).
+
+## Project Overview
+
+KnockNoc redefines how people share and access multimedia content. By leveraging IPFS and Near BOS, we've created a platform that allows users to publish their audio and video files without relying on a centralized backend. Instead, content is distributed across the decentralized IPFS network, offering privacy, security, and community-driven interactions.
+
+### Key Features
+
+- **Decentralized Content Sharing:** Share your audio and video files directly on the IPFS network, ensuring content availability without a traditional backend.
+
+- **Near BOS Integration:** Seamlessly interact with the Near blockchain through the Lighthouse SDK, enhancing the user experience and facilitating secure transactions.
+
+- **Community Building:** Connect with like-minded individuals based on shared interests, fostering a decentralized and engaging community.
+
+- **User-friendly Interface:** The Near-powered decentralized frontend provides an intuitive way to publish, access, and explore multimedia content.
+
+## Getting Started
+
+### Prerequisites
+
+Before you begin, make sure you have Node.js and npm installed on your system. You can download them from the official Node.js website: [Node.js Download](https://nodejs.org/)
+
+### Installation
+
+1. Clone the project repository to your local machine:
+   ```bash
+   git clone <repository_url>
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
